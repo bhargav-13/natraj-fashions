@@ -66,6 +66,12 @@ const Home = () => {
                 <span className="category-subtitle">Clothing</span>
               </div>
             </div>
+            {/* <div className="category-card category-boys" style={{ backgroundImage: "url('/public/image.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+              <div className="category-inner">
+                <span className="category-title">Baby</span>
+                <span className="category-subtitle">Clothing</span>
+              </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -89,6 +95,9 @@ const Home = () => {
             <p className="about-description">
               At Natraj Fashion, we believe childhood should be full of comfort, colors, and endless adventures. That's why we create clothing and accessories that are soft on skin, safe for kids, and stylish enough to make every moment picture-perfect. From playful everyday wear to cozy essentials, our collection is designed to keep up with your child's imagination and energy.
             </p>
+            <a href="#contact-us" className="cta-button">
+              Learn More
+            </a>
           </div>
         </div>
       </section>
@@ -308,7 +317,7 @@ const Home = () => {
       {/* Personal Shopping Call Section */}
       <section className="psc-section" id="contact-us">
         <div className="container psc-container">
-          <h2 className="psc-title">Our Personal Shopping Call</h2>
+          <h2 className="psc-title">Our Personal Shopping VideoCall</h2>
           <div className="psc-grid">
             <div className="psc-card psc-form-card">
               <h3 className="psc-form-title">Send us a Message</h3>
