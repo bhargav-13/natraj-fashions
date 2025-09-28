@@ -7,7 +7,25 @@ const Home = () => {
 
   const handleVideoCallAppointmentSubmit = (event) => {
     event.preventDefault();
-    setIsSuccessOpen(true);
+    const form = event.target;
+    const data = new FormData(form);
+
+    const firstName = (data.get('firstName') || '').toString().trim();
+    const lastName = (data.get('lastName') || '').toString().trim();
+    const babyAge = (data.get('babyAge') || '').toString().trim();
+    const timeSlot = (data.get('timeSlot') || '').toString().trim();
+    const whatsapp = (data.get('whatsapp') || '').toString().trim();
+
+    const message = `Hello Natraj Fashions, I'd like to book a video-call appointment.%0AName: ${encodeURIComponent(
+      `${firstName} ${lastName}`.trim()
+    )}%0ABaby Age: ${encodeURIComponent(babyAge)}%0APreferred Time: ${encodeURIComponent(
+      timeSlot
+    )}%0AMy WhatsApp: ${encodeURIComponent(whatsapp)}`;
+
+    const phone = '918141334111';
+    const waUrl = `https://wa.me/${phone}?text=${message}`;
+
+    window.open(waUrl, '_blank');
   };
 
   const closeSuccessModal = () => setIsSuccessOpen(false);
@@ -325,23 +343,23 @@ const Home = () => {
                 <div className="psc-row">
                   <div className="psc-field">
                     <label className="psc-label">First Name*</label>
-                    <input type="text" className="psc-input" placeholder="Enter First name" aria-label="First Name" />
+                    <input name="firstName" type="text" className="psc-input" placeholder="Enter First name" aria-label="First Name" />
                   </div>
                   <div className="psc-field">
                     <label className="psc-label">Last Name*</label>
-                    <input type="text" className="psc-input" placeholder="Enter Last name" aria-label="Last Name" />
+                    <input name="lastName" type="text" className="psc-input" placeholder="Enter Last name" aria-label="Last Name" />
                   </div>
                 </div>
                 <div className="psc-row">
                   <div className="psc-field psc-field-full">
                     <label className="psc-label">Baby Age:</label>
-                    <input type="text" className="psc-input psc-input-full" placeholder="Enter Baby Age" aria-label="Baby Age" />
+                    <input name="babyAge" type="text" className="psc-input psc-input-full" placeholder="Enter Baby Age" aria-label="Baby Age" />
                   </div>
                 </div>
                 <div className="psc-row">
                   <div className="psc-field psc-field-full">
                     <label className="psc-label">Preffered Time slot</label>
-                    <select className="psc-input psc-input-full" aria-label="Preferred Time Slot" defaultValue="">
+                    <select name="timeSlot" className="psc-input psc-input-full" aria-label="Preferred Time Slot" defaultValue="">
                       <option value="" disabled>Select</option>
                       <option value="morning">Morning</option>
                       <option value="afternoon">Afternoon</option>
@@ -352,7 +370,7 @@ const Home = () => {
                 <div className="psc-row">
                   <div className="psc-field psc-field-full">
                     <label className="psc-label">Your Whatsapp Number</label>
-                    <input type="text" className="psc-input psc-input-full" placeholder="eg. +91 xxxxx xxxxx" aria-label="WhatsApp Number" />
+                    <input name="whatsapp" type="text" className="psc-input psc-input-full" placeholder="eg. +91 xxxxx xxxxx" aria-label="WhatsApp Number" />
                   </div>
                 </div>
                 <button type="submit" className="psc-submit">Book Video-Call Appointment</button>
