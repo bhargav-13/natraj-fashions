@@ -66,12 +66,12 @@ const Home = () => {
                 <span className="category-subtitle">Clothing</span>
               </div>
             </div>
-            {/* <div className="category-card category-boys" style={{ backgroundImage: "url('/public/image.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+            <div className="category-card category-baby" style={{ backgroundImage: "url('/public/Group%2010.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
               <div className="category-inner">
                 <span className="category-title">Baby</span>
                 <span className="category-subtitle">Clothing</span>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </section>
@@ -273,8 +273,8 @@ const Home = () => {
             <div className="product-item">
               <div className="product-image-container">
                 <img 
-                  src="/public/shop-single-1%201.jpg" 
-                  alt="Red and white striped bodysuit" 
+                  src="/public/shop-single-1%201%20(1).jpg" 
+                  alt="Baby bodysuit" 
                   className="product-image"
                 />
               </div>
@@ -283,8 +283,8 @@ const Home = () => {
             <div className="product-item">
               <div className="product-image-container">
                 <img 
-                  src="/public/shop-single-2%201.jpg" 
-                  alt="Light blue bodysuit" 
+                  src="/public/Group%208.jpg" 
+                  alt="Baby clothing" 
                   className="product-image"
                 />
               </div>
@@ -293,10 +293,9 @@ const Home = () => {
             <div className="product-item">
               <div className="product-image-container">
                 <img 
-                  src="/public/shop-single-3%201.jpg" 
-                  alt="Light pink bodysuit" 
+                  src="/public/shop-single-3%201%20(1).jpg" 
+                  alt="Baby bodysuit" 
                   className="product-image"
-                
                 />
               </div>
             </div>
@@ -304,8 +303,8 @@ const Home = () => {
             <div className="product-item">
               <div className="product-image-container">
                 <img 
-                  src="/public/shop-single-1%201.jpg" 
-                  alt="Red and white striped bodysuit" 
+                  src="/public/Group%209.jpg" 
+                  alt="Baby clothing" 
                   className="product-image"
                 />
               </div>
@@ -411,6 +410,10 @@ const Home = () => {
                   <li><a href="#subscribe">Subscribe</a></li>
                   <li><a href="#contact-us">Contact Us</a></li>
                 </ul>
+                <div className="footer-gstin">
+                  <h5 className="gstin-heading">GSTIN</h5>
+                  <p className="gstin-number">24AADFN1027B1Z3</p>
+                </div>
               </div>
               
               <div className="footer-col">
@@ -439,7 +442,7 @@ const Home = () => {
           <hr className="footer-divider" />
           
           <div className="footer-bottom">
-            <div className="footer-copyright">Copyright 2025 - Natraj Fashion All rights reserved</div>
+            <div className="footer-copyright">Copyright 2025 - Natraj Fashions All rights reserved</div>
             <div className="footer-powered">Powered By <a href="https://codelix.in" target="_blank" rel="noopener noreferrer" className="footer-link">Codelix IT Solutions Pvt. Ltd.</a></div>
           </div>
         </div>

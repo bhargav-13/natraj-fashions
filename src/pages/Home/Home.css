@@ -17,11 +17,11 @@ body {
 
 /* Page container width for large hero */
 .container {
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0 40px;
-  margin-left:80px;
-  margin-right: 80px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 /* HERO LAYOUT */
@@ -120,13 +120,14 @@ body {
 /* FEATURES */
 /* CATEGORIES */
 .categories { padding: 4rem 0; background: #FFFFFF; }
+.categories .container { max-width: 1600px; margin: 0 auto; padding: 0 40px; }
 .categories-title { text-align: center; font-size: 5rem; margin-bottom: 2.6rem; margin-top: -1rem; color: #1D3F5C; font-family: 'Nunito', sans-serif; font-weight: 700; }
-.category-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-left:50px ;  margin-top: 4rem; align-items: stretch; }
-.category-card { position: relative; border-radius: 16px; overflow: hidden; height: 380px; display: flex; align-items: center; justify-content: center; text-decoration: none; }
+.category-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; margin-left: 0; margin-top: 4rem; align-items: stretch; max-width: 100%; }
+.category-card { position: relative; border-radius: 16px; overflow: hidden; height: 350px; display: flex; align-items: center; justify-content: center; text-decoration: none; }
 /* Images are now set inline in JSX to avoid path issues */
-.category-inner { position: absolute; top: 28px; right: 28px; bottom: 28px; left: 28px; border: 4px dashed rgba(255,255,255,0.92); border-radius: 16px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 25px; padding-left: 275px; padding-top: 60px; box-shadow: none; }
-.category-title { font-family: 'Nunito', sans-serif; font-weight: 800; color: #ffffff; font-size: 2.75rem; line-height: 1; text-shadow: 14.93px 17.42px 4.98px rgba(255,255,255,0.3); text-align: left; }
-.category-subtitle { font-family: 'Nunito', sans-serif; font-weight: 800; color: #ffffff; font-size: 2.75rem; line-height: 1; text-shadow: 14.93px 17.42px 4.98px rgba(255,255,255,0.3); text-align: left; }
+.category-inner { position: absolute; top: 20px; right: 20px; bottom: 20px; left: 20px; border: 4px dashed rgba(255,255,255,0.92); border-radius: 16px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 20px; padding-left: 200px; padding-top: 50px; box-shadow: none; }
+.category-title { font-family: 'Nunito', sans-serif; font-weight: 800; color: #ffffff; font-size: 2.4rem; line-height: 1; text-shadow: 14.93px 17.42px 4.98px rgba(255,255,255,0.3); text-align: left; }
+.category-subtitle { font-family: 'Nunito', sans-serif; font-weight: 800; color: #ffffff; font-size: 2.4rem; line-height: 1; text-shadow: 14.93px 17.42px 4.98px rgba(255,255,255,0.3); text-align: left; }
 
 
 /* ABOUT SECTION */
@@ -1059,9 +1060,29 @@ body {
 
 .contact-number {
   color: #ffffff;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   margin: 0;
   font-weight: 600;
+}
+
+.footer-gstin {
+  margin-top: 3.55rem;
+}
+
+.gstin-heading {
+  color: #ffffff;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+.gstin-number {
+  color: #ffffff;
+  font-size: 0.85rem;
+  margin: 0;
+  font-weight: 600;
+  margin-top: 10px;
 }
 
 .footer-divider {
@@ -1493,23 +1514,23 @@ body {
   }
 
   .category-card {
-    height: 350px;
+    height: 320px;
     margin: 0 1rem;
   }
 
   .category-inner {
-    top: 20px;
-    right: 20px;
-    bottom: 20px;
-    left: 20px;
-    padding-left: 180px;
-    padding-top: 40px;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding-left: 150px;
+    padding-top: 35px;
     gap: 15px;
   }
 
   .category-title,
   .category-subtitle {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .about-section {
@@ -1647,6 +1668,19 @@ body {
 
   .contact-number {
     font-size: 0.95rem;
+  }
+
+  .footer-gstin {
+    margin-top: 1.5rem;
+  }
+
+  .gstin-heading {
+    font-size: 0.95rem;
+  }
+
+  .gstin-number {
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
   }
 
   .footer-bottom {
@@ -2038,6 +2072,19 @@ body {
     font-size: 0.9rem;
   }
 
+  .footer-gstin {
+    margin-top: 1.5rem;
+  }
+
+  .gstin-heading {
+    font-size: 0.9rem;
+  }
+
+  .gstin-number {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+
   .footer-bottom {
     flex-direction: column;
     gap: 0.8rem;
@@ -2144,23 +2191,23 @@ body {
   }
 
   .category-card {
-    height: 230px;
+    height: 180px;
     margin: 0 0.5rem;
   }
 
   .category-inner {
-    top: 15px;
-    right: 15px;
-    bottom: 15px;
-    left: 15px;
-    padding-left: 140px;
-    padding-top: 30px;
-    gap: 10px;
+    top: 12px;
+    right: 12px;
+    bottom: 12px;
+    left: 12px;
+    padding-left: 120px;
+    padding-top: 25px;
+    gap: 8px;
   }
 
   .category-title,
   .category-subtitle {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   /* Shop by Category - Extra Small Mobile */
@@ -2262,6 +2309,19 @@ body {
 
   .contact-number {
     font-size: 0.85rem;
+  }
+
+  .footer-gstin {
+    margin-top: 1rem;
+  }
+
+  .gstin-heading {
+    font-size: 0.85rem;
+  }
+
+  .gstin-number {
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
   }
 
   .footer-bottom {
