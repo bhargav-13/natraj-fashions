@@ -460,8 +460,8 @@ const Home = () => {
           <hr className="footer-divider" />
           
           <div className="footer-bottom">
-            <div className="footer-copyright">Copyright 2025 - Natraj Fashions All rights reserved</div>
-            <div className="footer-powered">Powered By <a href="https://codelix.in" target="_blank" rel="noopener noreferrer" className="footer-link">Codelix IT Solutions Pvt. Ltd.</a></div>
+            <div className="footer-copyright">Copyright 2026 - Natraj Fashions All rights reserved</div>
+            <div className="footer-powered">Powered By <a href="https://www.codelixitsolutions.com/" target="_blank" rel="noopener noreferrer" className="footer-link">Codelix IT Solutions Pvt. Ltd.</a></div>
           </div>
         </div>
       </footer>
